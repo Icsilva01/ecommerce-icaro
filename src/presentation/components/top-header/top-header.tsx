@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as RouterLink } from "react-router-dom";
 
 const TopHeaderEstilizado = styled.header`
   display: flex;
@@ -51,12 +52,13 @@ export const TopHeader = () => {
         <Texto>
           Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
         </Texto>
-        <Link>Shop Now</Link>
+        <RouterLink to={"/shop"}>
+          <Link>Shop Now</Link>
+        </RouterLink>
       </Container>
       <Select>
-        <Option>Real</Option>
-        <Option>Dólar</Option>
-        <Option>Euro</Option>
+        <Option>Português</Option>
+        <Option>Inglês</Option>
       </Select>
     </TopHeaderEstilizado>
   );

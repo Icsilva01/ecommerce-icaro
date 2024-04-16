@@ -1,21 +1,15 @@
+import { useState } from "react";
 import styled from "styled-components";
 import { ImageLogin } from "../../assets/login/Image-login";
-import { useState } from "react";
-import { Button, Footer, Header, Input, TopHeader } from "../components";
-import { Link as RouterLink } from "react-router-dom";
+import { Button, Footer, Header, Input, Modal, TopHeader } from "../components";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   padding-top: 50px;
   display: flex;
   gap: 100px;
 `;
-const ContainerButton = styled.div`
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  align-items: center;
-  padding: 0px 100px;
-`;
+
 const LoginForm = styled.form`
   display: flex;
   flex-direction: column;
@@ -43,19 +37,23 @@ const Text = styled.p`
   font-family: "Roboto", sans-serif;
 `;
 
-const Link = styled.a`
+const ButtonEstilizado = styled.button`
+  padding: 8px 28px;
+  background-color: #db4444;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
   font-size: 16px;
-  font-weight: 400;
-  color: #db4444;
+  font-weight: 500;
   font-family: "Roboto", sans-serif;
-  text-decoration: none;
   cursor: pointer;
+  width: 20%;
 `;
 
-export const Login = () => {
+export const ForgetPassword = () => {
   const [state, setState] = useState({
     email: "",
-    password: "",
+    modal: false,
   });
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -68,6 +66,17 @@ export const Login = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setState((state) => ({
+      ...state,
+      modal: true,
+    }));
+  };
+
+  const handleCloseModal = () => {
+    setState((state) => ({
+      ...state,
+      modal: false,
+    }));
   };
   return (
     <div>
@@ -76,33 +85,27 @@ export const Login = () => {
       <Container>
         <ImageLogin />
         <LoginForm onSubmit={handleSubmit}>
-          <Title>Log in to Exclusive</Title>
-          <Text>Enter your details below</Text>
+          <Title>Forget password?</Title>
+          <Text>Enter your email</Text>
           <Input
             autoComplete="off"
             type="email"
-            placeholder="Email or Phone Number"
+            placeholder="Email"
             name="email"
             value={state.email}
             onChange={handleChange}
           />
-          <Input
-            type="password"
-            autoComplete="off"
-            placeholder="Password"
-            name="password"
-            value={state.password}
-            onChange={handleChange}
-          />
-          <ContainerButton>
-            <Button>Sign in</Button>
-            <RouterLink to={"/forget-password"}>
-              <Link>Forget Password?</Link>
-            </RouterLink>
-          </ContainerButton>
+          <Button>Send new password</Button>
         </LoginForm>
       </Container>
       <Footer />
+      {state.modal && (
+        <Modal onClose={handleCloseModal} title="Email successfully sent">
+          <Link to="/">
+            <ButtonEstilizado>OK</ButtonEstilizado>
+          </Link>
+        </Modal>
+      )}
     </div>
   );
 };
