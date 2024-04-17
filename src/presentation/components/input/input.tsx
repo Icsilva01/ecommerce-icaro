@@ -44,7 +44,10 @@ export const Input: React.FC<Props> = (props: Props) => {
       setError(!emailRegex.test(props.value));
     } else if (props.type === 'password' && typeof props.value === 'string') {
       setError(props.value.length < 8);
+    } else if (props.type === 'text' && typeof props.value === 'string') {
+      setError(props.value.length < 3);
     }
+
   }, [props.value, props.type]);
 
   return (

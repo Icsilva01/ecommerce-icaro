@@ -57,8 +57,8 @@ export const TopHeader = () => {
         </RouterLink>
       </Container>
       <Select>
-        <Option>Português</Option>
-        <Option>Inglês</Option>
+        <Option>English</Option>
+        <Option>Portuguese</Option>
       </Select>
     </TopHeaderEstilizado>
   );
