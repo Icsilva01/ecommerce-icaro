@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { ImageLogin } from "../../assets/login/Image-login";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button, Footer, Header, Input, TopHeader } from "../components";
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
+import { useAuth } from "../../utils/useAuth";
 
 const Container = styled.div`
   padding-top: 50px;
@@ -53,10 +54,26 @@ const Link = styled.a`
 `;
 
 export const Login = () => {
+  const { makeLogin, user } = useAuth();
   const [state, setState] = useState({
     email: "",
     password: "",
+    error: false,
   });
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (user) {
+      navigate("/user");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user]);
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    makeLogin({ email: state.email, password: state.password });
+  }
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -65,10 +82,7 @@ export const Login = () => {
       [name]: value,
     }));
   };
-
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-  };
+  
   return (
     <div>
       <TopHeader />
