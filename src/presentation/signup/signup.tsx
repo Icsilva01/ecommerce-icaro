@@ -102,7 +102,7 @@ export const SignUp = () => {
           <Button>Create account</Button>
           <ContainerLogin>
             <Text>Already have an account?</Text>
-            <Link to="/">
+            <Link to="/login">
               <Text>Sign in</Text>
             </Link>
           </ContainerLogin>

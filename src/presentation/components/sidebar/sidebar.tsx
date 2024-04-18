@@ -9,10 +9,9 @@ const SidebarContainer = styled.div`
 
 const Accordion = styled.div`
   cursor: pointer;
-  padding: 18px;
+  padding: 10px;
   text-align: left;
   outline: none;
-  transition: 0.4s;
   font-size: 20px;
   display: flex;
   justify-content: space-between;
