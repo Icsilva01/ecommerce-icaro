@@ -65,7 +65,7 @@ export const Login = () => {
 
   useEffect(() => {
     if (user) {
-      navigate("/user");
+      navigate("/");
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
@@ -82,7 +82,7 @@ export const Login = () => {
       [name]: value,
     }));
   };
-  
+
   return (
     <div>
       <TopHeader />

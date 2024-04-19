@@ -4,23 +4,28 @@ import { ForgetPassword, Home, Login, SignUp } from "./presentation";
 import { AuthProvider } from "./provider/AuthProvider";
 import { useAuth } from "./utils/useAuth";
 
-function App() {
+function RoutesComponent() {
   const { user } = useAuth();
 
   return (
+    <Router>
+      <Routes>
+        {user ? (
+          <Route path="/" element={<Home />} />
+        ) : (
+          <Route path="/" element={<Login />} />
+        )}
+        <Route path="/forget-password" element={<ForgetPassword />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
+    </Router>
+  );
+}
+
+function App() {
+  return (
     <AuthProvider>
-      <Router>
-        <Routes>
-          {user ? (
-            <Route path="/" element={<Home />} />
-          ) : (
-            <Route path="/" element={<Login />} />
-          )}
-          {/* <Route path="/login" element={<Login />} /> */}
-          <Route path="/forget-password" element={<ForgetPassword />} />
-          <Route path="/signup" element={<SignUp />} />
-        </Routes>
-      </Router>
+      <RoutesComponent />
     </AuthProvider>
   );
 }
