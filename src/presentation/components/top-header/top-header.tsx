@@ -1,5 +1,6 @@
-import styled from "styled-components";
+import { Trans, useTranslation } from "react-i18next";
 import { Link as RouterLink } from "react-router-dom";
+import styled from "styled-components";
 
 const TopHeaderEstilizado = styled.header`
   display: flex;
@@ -46,6 +47,12 @@ const Link = styled.a`
 `;
 
 export const TopHeader = () => {
+  const { i18n } = useTranslation();
+
+  const handleLanguageChange = (event:any) => {
+    i18n.changeLanguage(event.target.value);
+  };
+
   return (
     <TopHeaderEstilizado>
       <Container>
@@ -56,9 +63,13 @@ export const TopHeader = () => {
           <Link>Shop Now</Link>
         </RouterLink>
       </Container>
-      <Select>
-        <Option>English</Option>
-        <Option>Portuguese</Option>
+      <Select onChange={handleLanguageChange}>
+        <Option value={'en'}>
+          <Trans i18nKey={"TOP.MENU.SELECT.ENGLISH"} />
+        </Option>
+        <Option value={'ptBr'}>
+          <Trans i18nKey={"TOP.MENU.SELECT.PORTUGUESE"} />
+        </Option>
       </Select>
     </TopHeaderEstilizado>
   );

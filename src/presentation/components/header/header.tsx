@@ -1,5 +1,5 @@
+import { t } from "i18next";
 import { useState } from "react";
-import { Trans } from "react-i18next";
 import { LuSearch, LuShoppingCart, LuUser } from "react-icons/lu";
 import { Link as RouterLink, useNavigate } from "react-router-dom";
 import styled from "styled-components";
@@ -145,22 +145,22 @@ export const Header = () => {
       <Container>
         <RouterLink to={"/"}>
           <Link>
-          <Trans i18nKey="MENU.HOME" />
+          {t("MENU.HOME")}
           </Link>
         </RouterLink>
         <RouterLink to={"/contact"}>
           <Link>
-            <Trans i18nKey="MENU.CONTACT" />
+            {t("MENU.CONTACT")}
           </Link>
         </RouterLink>
         <RouterLink to={"/about"}>
           <Link>
-            <Trans i18nKey="MENU.ABOUT" />
+            {t("MENU.ABOUT")}
           </Link>
         </RouterLink>
         <RouterLink to={"/signup"}>
           <Link>
-            <Trans i18nKey="MENU.SIGNUP" />
+            {t("MENU.SIGNUP")}
           </Link>
         </RouterLink>
       </Container>
