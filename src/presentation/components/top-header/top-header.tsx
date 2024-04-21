@@ -57,18 +57,20 @@ export const TopHeader = () => {
     <TopHeaderEstilizado>
       <Container>
         <Texto>
-          Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+          <Trans i18nKey={"TOP.MENU.TEXT"} />
         </Texto>
         <RouterLink to={"/shop"}>
-          <Link>Shop Now</Link>
+          <Link>
+            <Trans i18nKey={"TOP.MENU.SHOP.NOW"} />
+          </Link>
         </RouterLink>
       </Container>
       <Select onChange={handleLanguageChange}>
-        <Option value={'en'}>
-          <Trans i18nKey={"TOP.MENU.SELECT.ENGLISH"} />
-        </Option>
         <Option value={'ptBr'}>
           <Trans i18nKey={"TOP.MENU.SELECT.PORTUGUESE"} />
+        </Option>
+        <Option value={'en'}>
+          <Trans i18nKey={"TOP.MENU.SELECT.ENGLISH"} />
         </Option>
       </Select>
     </TopHeaderEstilizado>
