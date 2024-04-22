@@ -4,9 +4,26 @@
     "TOP.MENU.SELECT.PORTUGUESE": "Português",
     "TOP.MENU.TEXT": "Promoção de verão para todos os trajes de banho e entrega expressa grátis - OFF 50%!",
     "TOP.MENU.SHOP.NOW": "Compre agora",
+    
     "MENU.HOME": "Home",
     "MENU.ABOUT": "Sobre",
     "MENU.CONTACT": "Contato",
-    "MENU.SIGNUP": "Cadastre-se"
+    "MENU.SIGNUP": "Cadastre-se",
+
+    "CONTACT.PHONE": "Telefone",
+    "CONTACT.PHONE.AVAILABLE": "Estamos disponíveis 24 horas por dia, 7 dias por semana.",
+    "CONTACT.PHONE.VALUE": "Telefone: +55 11 9999-9999",
+    "CONTACT.EMAIL": "E-mail",
+    "CONTACT.EMAIL.TEXT": "Preencha nosso formulário e entraremos em contato em até 24 horas.",
+    "CONTACT.EMAIL.VALUE.1": "E-mail: customer@exclusive.com",
+    "CONTACT.EMAIL.VALUE.2": "E-mail: support@exclusive.com",
+
+    "PLACEHOLDER.EMAIL": "Email",
+    "PLACEHOLDER.PASSWORD": "Senha",
+    "PLACEHOLDER.NAME": "Nome",
+    "PLACEHOLDER.PHONE": "Telefone",
+    "PLACEHOLDER.MESSAGE": "Mensagem",
+
+    "BUTTON.CONTACT": "Enviar mensagem"
   }
 }

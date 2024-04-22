@@ -27,7 +27,6 @@ const ContainerButton = styled.div`
 const Stack = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
   height: 100vh;
 `;
 

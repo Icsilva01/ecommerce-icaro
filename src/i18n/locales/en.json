@@ -4,9 +4,25 @@
     "TOP.MENU.SELECT.PORTUGUESE": "Portuguese",
     "TOP.MENU.TEXT": "Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!",
     "TOP.MENU.SHOP.NOW": "Shop Now",
+
     "MENU.HOME": "Home",
     "MENU.ABOUT": "About",
     "MENU.CONTACT": "Contact",
-    "MENU.SIGNUP": "Sign Up"
+    "MENU.SIGNUP": "Sign Up",
+
+    "CONTACT.PHONE": "Call To Us",
+    "CONTACT.EMAIL": "E-mail",
+    "CONTACT.EMAIL.TEXT": "Fill out our form and we will contact you within 24 hours.",
+    "CONTACT.EMAIL.VALUE.1": "Emails: customer@exclusive.com",
+    "CONTACT.EMAIL.VALUE.2": "Emails: support@exclusive.com",
+
+    "PLACEHOLDER.EMAIL": "Email",
+    "PLACEHOLDER.PASSWORD": "Password",
+    "PLACEHOLDER.NAME": "Name",
+    "PLACEHOLDER.PHONE": "Phone",
+    "PLACEHOLDER.MESSAGE": "Message",
+
+    "BUTTON.CONTACT": "Send message"
+
   }
 }
