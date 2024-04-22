@@ -25,7 +25,8 @@ const Stack = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 20.8px 35px;
+  padding: 32px 35px;
+  height: 486px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
@@ -114,6 +115,7 @@ export const Contact = () => {
           </Box>
           <TextNavigation
             style={{
+              cursor: "auto",
               color: "#000000",
               paddingBottom: "16px",
               paddingTop: "24px",
@@ -123,6 +125,7 @@ export const Contact = () => {
           </TextNavigation>
           <TextNavigation
             style={{
+              cursor: "auto",
               color: "#000000",
               borderBottom: "0.5px solid #7D8184",
               paddingBottom: "32px",
@@ -132,7 +135,7 @@ export const Contact = () => {
           </TextNavigation>
           <Box style={{ padding: "32px 0 0 0" }}>
             <ImageEmail />
-            <TextNavigation style={{ color: "#000000" }}>
+            <TextNavigation style={{ color: "#000000", cursor: "auto",}}>
               {t("CONTACT.EMAIL")}
             </TextNavigation>
           </Box>
@@ -151,7 +154,7 @@ export const Contact = () => {
             style={{
               cursor: "auto",
               color: "#000000",
-              paddingBottom: "32px",
+              paddingBottom: "16px",
             }}
           >
             {t("CONTACT.EMAIL.VALUE.1")}
@@ -160,7 +163,6 @@ export const Contact = () => {
             style={{
               cursor: "auto",
               color: "#000000",
-              paddingBottom: "32px",
             }}
           >
             {t("CONTACT.EMAIL.VALUE.2")}
