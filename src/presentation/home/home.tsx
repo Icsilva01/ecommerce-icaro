@@ -1,4 +1,11 @@
+import { useEffect, useState } from "react";
+import {
+  IoArrowBackCircleOutline,
+  IoArrowForwardCircleOutline,
+} from "react-icons/io5";
 import styled from "styled-components";
+import { BannerImg } from "../../assets/home/banner";
+import { products } from "../../assets/home/products";
 import {
   Footer,
   Header,
@@ -6,14 +13,7 @@ import {
   Sidebar,
   TopHeader,
 } from "../components";
-import { useEffect, useState } from "react";
-import { BannerImg } from "../../assets/home/banner";
-import {
-  IoArrowBackCircleOutline,
-  IoArrowForwardCircleOutline,
-} from "react-icons/io5";
 import { ProductBox } from "../components/productBox/productBox";
-import { Controller } from "../../assets/home/controller";
 
 const Container = styled.div`
   display: flex;
@@ -162,24 +162,13 @@ export const Home = () => {
         </ContainerTimer>
       </HeaderProducts>
       <ContainerProducts>
-        <ProductBox text="HAVIT HV-G92 Gamepad" value="$120">
-          <Controller />
-        </ProductBox>
-        <ProductBox text="HAVIT HV-G92 Gamepad" value="$120">
-          <Controller />
-        </ProductBox>
-        <ProductBox text="HAVIT HV-G92 Gamepad" value="$120">
-          <Controller />
-        </ProductBox>
-        <ProductBox text="HAVIT HV-G92 Gamepad" value="$120">
-          <Controller />
-        </ProductBox>
-        <ProductBox text="HAVIT HV-G92 Gamepad" value="$120">
-          <Controller />
-        </ProductBox>
-        <ProductBox text="HAVIT HV-G92 Gamepad" value="$120">
-          <Controller />
-        </ProductBox>
+        <ContainerProducts>
+          {products.map((product, index) => (
+            <ProductBox key={index} text={product.text} value={product.value}>
+              <product.Component />
+            </ProductBox>
+          ))}
+        </ContainerProducts>
       </ContainerProducts>
       <Footer />
     </Stack>

@@ -23,7 +23,7 @@ const Container = styled.div`
   transition: transform 0.3s ease-in-out;
 
   &:hover {
-    transform: scale(1.1); // adjust this value as needed
+    transform: scale(1.1);
   }
 `;
 const BoxProduct = styled.div`

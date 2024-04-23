@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { Contact, ForgetPassword, Home, Login, SignUp } from "../presentation";
+import { About, Contact, ForgetPassword, Home, Login, SignUp } from "../presentation";
 
 export const Router = () => {
   // const { token } = useAuth();
@@ -11,6 +11,7 @@ export const Router = () => {
       <Route path={"/"} element={<Home />} />
       <Route path={"/login"} element={<Login />} />
       <Route path={"/contact"} element={<Contact />} />
+      <Route path={"/about"} element={<About />} />
       
       {/* <Route path="/*" element={token ? <PrivateRoutes /> : <Login/>} /> */}
     </Routes>

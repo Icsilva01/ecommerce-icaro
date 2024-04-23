@@ -18,6 +18,14 @@
     "CONTACT.EMAIL.VALUE.1": "E-mail: customer@exclusive.com",
     "CONTACT.EMAIL.VALUE.2": "E-mail: support@exclusive.com",
 
+    "ABOUT.TITLE": "Nossa história",
+    "ABOUT.TEXT": "Lançado em 2015, o Exclusive é o principal local de compras on-line do Sul da Ásia, com presença ativa em Bangladesh. Apoiada por uma ampla gama de soluções personalizadas de marketing, dados e serviços, a Exclusive possui 10.500 vendedores e 300 marcas e atende 3 milhões de clientes em toda a região.",
+    "ABOUT.TEXT.2": "A Exclusive tem mais de 1 milhão de produtos para oferecer, crescendo muito rapidamente. Exclusive oferece uma variedade diversificada em categorias que vão desde o consumidor.",
+    "ABOUT.SALERS": "Vendedores ativos em nosso site",
+    "ABOUT.PRODUCTS": "Vendas mensais de produtos",
+    "ABOUT.CLIENTS": "Clientes acessando nosso site",
+    "ABOUT.ANUAL": "Venda bruta anual em nosso site",
+
     "PLACEHOLDER.EMAIL": "Email",
     "PLACEHOLDER.PASSWORD": "Senha",
     "PLACEHOLDER.NAME": "Nome",
