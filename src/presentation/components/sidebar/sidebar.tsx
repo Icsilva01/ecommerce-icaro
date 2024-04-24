@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const SidebarContainer = styled.div`
@@ -23,8 +24,9 @@ const Accordion = styled.div`
 
 
 export const Sidebar = () => {
+  const navigate = useNavigate();
   return (
-    <SidebarContainer>
+    <SidebarContainer onClick={() => navigate('/error404')}>
       {['Woman’s Fashion', 'Men’s Fashion', 'Electronics', 'Home & Lifestyle', 'Medicine', 'Sports'].map((sidebar, index) => (
         <div key={index}>
           <Accordion>

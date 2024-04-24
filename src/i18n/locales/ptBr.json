@@ -9,6 +9,8 @@
     "MENU.ABOUT": "Sobre",
     "MENU.CONTACT": "Contato",
     "MENU.SIGNUP": "Cadastre-se",
+    "MENU.ERROR.404": "Erro 404",
+    "MENU.ERROR.500": "Erro 500",
 
     "CONTACT.PHONE": "Telefone",
     "CONTACT.PHONE.AVAILABLE": "Estamos disponíveis 24 horas por dia, 7 dias por semana.",
@@ -26,12 +28,16 @@
     "ABOUT.CLIENTS": "Clientes acessando nosso site",
     "ABOUT.ANUAL": "Venda bruta anual em nosso site",
 
+    "ERROR.404.TITLE": "404 não encontrado",
+    "ERROR.404.TEXT": "Sua página visitada não foi encontrada. Você pode ir para a página inicial.",
+
     "PLACEHOLDER.EMAIL": "Email",
     "PLACEHOLDER.PASSWORD": "Senha",
     "PLACEHOLDER.NAME": "Nome",
     "PLACEHOLDER.PHONE": "Telefone",
     "PLACEHOLDER.MESSAGE": "Mensagem",
 
-    "BUTTON.CONTACT": "Enviar mensagem"
+    "BUTTON.CONTACT": "Enviar mensagem",
+    "BUTTON.BACK.HOME": "Voltar para a página inicial"
   }
 }

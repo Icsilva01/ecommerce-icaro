@@ -9,6 +9,8 @@
     "MENU.ABOUT": "About",
     "MENU.CONTACT": "Contact",
     "MENU.SIGNUP": "Sign Up",
+    "MENU.ERROR.404": "404 Error",
+    "MENU.ERROR.500": "500 Error",
 
     "CONTACT.PHONE": "Call To Us",
     "CONTACT.EMAIL": "E-mail",
@@ -24,13 +26,17 @@
     "ABOUT.CLIENTS": "Customers active our site",
     "ABOUT.ANUAL": "Anual gross sale in our site",
 
+    "ERROR.404.TITLE": "404 Not Found",
+    "ERROR.404.TEXT": "Your visited page not found. You may go home page.",
+
     "PLACEHOLDER.EMAIL": "Email",
     "PLACEHOLDER.PASSWORD": "Password",
     "PLACEHOLDER.NAME": "Name",
     "PLACEHOLDER.PHONE": "Phone",
     "PLACEHOLDER.MESSAGE": "Message",
 
-    "BUTTON.CONTACT": "Send message"
+    "BUTTON.CONTACT": "Send message",
+    "BUTTON.BACK.HOME": "Back to home page"
 
   }
 }
