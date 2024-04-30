@@ -2,7 +2,8 @@ import { useState } from "react";
 import styled from "styled-components";
 import { Button, Footer, Header, Input, TopHeader } from "../components";
 import { ImageLogin } from "../../assets/login/Image-login";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { t } from "i18next";
 
 const Container = styled.div`
   padding-top: 50px;
@@ -51,6 +52,8 @@ export const SignUp = () => {
     password: "",
   });
 
+  const navigate = useNavigate();
+
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
     setState((state) => ({
@@ -65,6 +68,7 @@ export const SignUp = () => {
       ...state,
       modal: true,
     }));
+    navigate("/login");
   };
   return (
     <div>
@@ -73,12 +77,12 @@ export const SignUp = () => {
       <Container>
         <ImageLogin />
         <LoginForm onSubmit={handleSubmit}>
-          <Title>Create an account</Title>
-          <Text>Enter your details below</Text>
+          <Title>{t("SIGNUP.TITLE")}</Title>
+          <Text>{t("SIGNUP.TEXT")}</Text>
           <Input
             autoComplete="off"
             type="text"
-            placeholder="Name"
+            placeholder={t("PLACEHOLDER.NAME")}
             name="name"
             value={state.name}
             onChange={handleChange}
@@ -86,7 +90,7 @@ export const SignUp = () => {
           <Input
             autoComplete="off"
             type="email"
-            placeholder="Email"
+            placeholder={t("PLACEHOLDER.EMAIL")}
             name="email"
             value={state.email}
             onChange={handleChange}
@@ -94,16 +98,16 @@ export const SignUp = () => {
           <Input
             autoComplete="off"
             type="password"
-            placeholder="Password"
+            placeholder={t("PLACEHOLDER.PASSWORD")}
             name="password"
             value={state.password}
             onChange={handleChange}
           />
-          <Button>Create account</Button>
+          <Button>{t("BUTTON.SIGNUP")}</Button>
           <ContainerLogin>
-            <Text>Already have an account?</Text>
+            <Text>{t("SIGNUP.ALREADY.ACCOUNT")}</Text>
             <Link to="/login">
-              <Text>Sign in</Text>
+              <Text>{t("BUTTON.LOGIN")}</Text>
             </Link>
           </ContainerLogin>
         </LoginForm>

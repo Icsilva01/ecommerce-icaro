@@ -13,6 +13,8 @@
     "MENU.ERROR.500": "500 Error",
 
     "CONTACT.PHONE": "Call To Us",
+    "CONTACT.PHONE.AVAILABLE": "We are available 24/7, 7 days a week.",
+    "CONTACT.PHONE.VALUE": "Phone: +55 11 9999-9999",
     "CONTACT.EMAIL": "E-mail",
     "CONTACT.EMAIL.TEXT": "Fill out our form and we will contact you within 24 hours.",
     "CONTACT.EMAIL.VALUE.1": "Emails: customer@exclusive.com",
@@ -35,8 +37,42 @@
     "PLACEHOLDER.PHONE": "Phone",
     "PLACEHOLDER.MESSAGE": "Message",
 
-    "BUTTON.CONTACT": "Send message",
-    "BUTTON.BACK.HOME": "Back to home page"
+    "HOME.FLASH.SALE": "Flash Sales",
+    "HOME.TODAY": "Today's",
+    "HOME.DAY": "Days",
+    "HOME.HOURS": "Hours",
+    "HOME.MINUTES": "Minutes",
+    "HOME.SECONDS": "Seconds",
 
+    "SIDEBAR.CATEGORIE.WOMAN":"Woman’s Fashion",
+    "SIDEBAR.CATEGORIE.MEN": "Men’s Fashion",
+    "SIDEBAR.CATEGORIE.ELETRONICS": "Eletronics",
+    "SIDEBAR.CATEGORIE.HOME": "Home & Living",
+    "SIDEBAR.CATEGORIE.SPORTS": "Sports",
+
+    "SIGNUP.TITLE": "Create an account",
+    "SIGNUP.TEXT": "Enter your details below",
+    "SIGNUP.ALREADY.ACCOUNT": "Already have account?",
+
+    "LOGIN.TITLE": "Log in to Exclusive",
+    "LOGIN.TEXT":"Enter your details below",
+
+    "LOGIN.ACCOUNT": "Login",
+    "MANAGE.ACCOUNT": "Manage Account",
+
+    "INVALID.FIELD": "is invalid",
+
+    "FORGET.PASSWORD.TITLE": "Forget Password?",
+    "FORGET.PASSWORD.TEXT": "Enter your email address and we will send you a new password.",
+    "MODAL.TITLE.FORGET.PASSWORD": "Email successfully sent",
+
+    "BUTTON.CONTACT": "Send message",
+    "BUTTON.BACK.HOME": "Back to home page",
+    "BUTTON.SIGNUP.NOW": "Create Account",
+    "BUTTON.LOGIN": "Sign in",
+    "BUTTON.SIGNUP": "Sign up",
+    "BUTTON.FORGET.PASSWORD": "Forget password?",
+    "BUTTON.SEND.NEW.PASSWORD": "Send new password",
+    "BUTTON.OK": "Ok, thanks"
   }
 }

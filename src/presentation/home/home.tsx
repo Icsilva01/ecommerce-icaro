@@ -14,6 +14,7 @@ import {
   TopHeader,
 } from "../components";
 import { ProductBox } from "../components/productBox/productBox";
+import { t } from "i18next";
 
 const Container = styled.div`
   display: flex;
@@ -134,24 +135,24 @@ export const Home = () => {
         <BannerImg />
       </Container>
       <HeaderProducts>
-        <ProductTitle>Today’s</ProductTitle>
+        <ProductTitle>{t("HOME.TODAY")}</ProductTitle>
         <ContainerTimer>
-          <TitleText>Flash Sales</TitleText>
+          <TitleText>{t("HOME.FLASH.SALE")}</TitleText>
           <Timer>
             <TimerSegment>
-              <TimerLabel>Days</TimerLabel>
+              <TimerLabel>{t("HOME.DAY")}</TimerLabel>
               <TimerValue>{timeLeft.days}</TimerValue>
             </TimerSegment>
             <TimerSegment>
-              <TimerLabel>Hours</TimerLabel>
+              <TimerLabel>{t("HOME.HOURS")}</TimerLabel>
               <TimerValue>{timeLeft.hours}</TimerValue>
             </TimerSegment>
             <TimerSegment>
-              <TimerLabel>Minutes</TimerLabel>
+              <TimerLabel>{t("HOME.MINUTES")}</TimerLabel>
               <TimerValue>{timeLeft.minutes}</TimerValue>
             </TimerSegment>
             <TimerSegment>
-              <TimerLabel>Seconds</TimerLabel>
+              <TimerLabel>{t("HOME.SECONDS")}</TimerLabel>
               <TimerValue>{timeLeft.seconds}</TimerValue>
             </TimerSegment>
           </Timer>

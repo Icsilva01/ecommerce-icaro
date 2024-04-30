@@ -1,8 +1,8 @@
+import { t } from "i18next";
 import { useState } from "react";
 import styled from "styled-components";
 import { ImageLogin } from "../../assets/login/Image-login";
 import { Button, Footer, Header, Input, Modal, TopHeader } from "../components";
-import { Link } from "react-router-dom";
 
 const Container = styled.div`
   padding-top: 50px;
@@ -35,19 +35,6 @@ const Text = styled.p`
   font-weight: 400;
   color: #000;
   font-family: "Roboto", sans-serif;
-`;
-
-const ButtonEstilizado = styled.button`
-  padding: 8px 28px;
-  background-color: #db4444;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
-  cursor: pointer;
-  width: 20%;
 `;
 
 export const ForgetPassword = () => {
@@ -85,26 +72,24 @@ export const ForgetPassword = () => {
       <Container>
         <ImageLogin />
         <LoginForm onSubmit={handleSubmit}>
-          <Title>Forget password?</Title>
-          <Text>Enter your email</Text>
+          <Title>{t("FORGET.PASSWORD.TITLE")}</Title>
+          <Text>{t("FORGET.PASSWORD.TEXT")}</Text>
           <Input
             autoComplete="off"
             type="email"
-            placeholder="Email"
+            placeholder={t("PLACEHOLDER.EMAIL")}
             name="email"
             value={state.email}
             onChange={handleChange}
           />
-          <Button>Send new password</Button>
+          <Button disabled={!state.email}>
+            {t("BUTTON.SEND.NEW.PASSWORD")}
+          </Button>
         </LoginForm>
       </Container>
       <Footer />
       {state.modal && (
-        <Modal onClose={handleCloseModal} title="Email successfully sent">
-          <Link to="/">
-            <ButtonEstilizado>OK</ButtonEstilizado>
-          </Link>
-        </Modal>
+        <Modal onClose={handleCloseModal} title={t("MODAL.TITLE.FORGET.PASSWORD")} />
       )}
     </div>
   );

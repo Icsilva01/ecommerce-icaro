@@ -179,14 +179,14 @@ export const Header = () => {
                 navigate("/login");
               }}
             >
-              Login
+              {t("LOGIN.ACCOUNT")}
             </PopoverItem>
             <PopoverItem
               onClick={() => {
                 navigate("/manager-account");
               }}
             >
-              Manage Account
+              {t("MANAGE.ACCOUNT")}
             </PopoverItem>
           </Popover>
       </InputContainer>

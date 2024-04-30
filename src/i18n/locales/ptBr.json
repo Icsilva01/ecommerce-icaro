@@ -37,7 +37,42 @@
     "PLACEHOLDER.PHONE": "Telefone",
     "PLACEHOLDER.MESSAGE": "Mensagem",
 
+    "HOME.FLASH.SALE": "Venda relâmpago",
+    "HOME.TODAY": "Hoje",
+    "HOME.DAY": "Dias",
+    "HOME.HOURS": "Horas",
+    "HOME.MINUTES": "Minutos",
+    "HOME.SECONDS": "Segundos",
+
+    "SIDEBAR.CATEGORIE.WOMAN":"Moda feminina",
+    "SIDEBAR.CATEGORIE.MEN": "Moda masculina",
+    "SIDEBAR.CATEGORIE.ELETRONICS": "Eletrônicos",
+    "SIDEBAR.CATEGORIE.HOME": "Casa",
+    "SIDEBAR.CATEGORIE.SPORTS": "Esportes",
+
+    "SIGNUP.TITLE": "Crie sua conta",
+    "SIGNUP.TEXT": "Preencha o formulário abaixo para criar sua conta.",
+    "SIGNUP.ALREADY.ACCOUNT": "Já tem uma conta?",
+
+    "LOGIN.TITLE": "Entrar no Exclusive",
+    "LOGIN.TEXT":"Faça login para continuar.",
+
+    "LOGIN.ACCOUNT": "Login",
+    "MANAGE.ACCOUNT": "Gerenciar conta",
+
+    "INVALID.FIELD": "inválido",
+
+    "FORGET.PASSWORD.TITLE": "Esqueceu a senha?",
+    "FORGET.PASSWORD.TEXT": "Digite seu e-mail e enviaremos um link para redefinir sua senha.",
+    "MODAL.TITLE.FORGET.PASSWORD": "E-mail enviado com sucesso!",
+
     "BUTTON.CONTACT": "Enviar mensagem",
-    "BUTTON.BACK.HOME": "Voltar para a página inicial"
+    "BUTTON.BACK.HOME": "Voltar para a página inicial",
+    "BUTTON.SIGNUP.NOW": "Criar conta",
+    "BUTTON.LOGIN": "Entrar",
+    "BUTTON.SIGNUP": "Cadastre-se",
+    "BUTTON.FORGET.PASSWORD": "Esqueceu a senha?",
+    "BUTTON.SEND.NEW.PASSWORD": "Enviar nova senha",
+    "BUTTON.OK": "Ok, entendi"
   }
 }

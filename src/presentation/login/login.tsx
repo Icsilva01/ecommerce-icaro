@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Button, Footer, Header, Input, TopHeader } from "../components";
 import { Link as RouterLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../../utils/useAuth";
+import { t } from "i18next";
 
 const Container = styled.div`
   padding-top: 50px;
@@ -90,12 +91,12 @@ export const Login = () => {
       <Container>
         <ImageLogin />
         <LoginForm onSubmit={handleSubmit}>
-          <Title>Log in to Exclusive</Title>
-          <Text>Enter your details below</Text>
+          <Title>{t('LOGIN.TITLE')}</Title>
+          <Text>{t('LOGIN.TEXT')}</Text>
           <Input
             autoComplete="off"
             type="email"
-            placeholder="Email or Phone Number"
+            placeholder={t('PLACEHOLDER.EMAIL')}
             name="email"
             value={state.email}
             onChange={handleChange}
@@ -103,15 +104,15 @@ export const Login = () => {
           <Input
             type="password"
             autoComplete="off"
-            placeholder="Password"
+            placeholder={t('PLACEHOLDER.PASSWORD')}
             name="password"
             value={state.password}
             onChange={handleChange}
           />
           <ContainerButton>
-            <Button>Sign in</Button>
+            <Button>{t('BUTTON.LOGIN')}</Button>
             <RouterLink to={"/forget-password"}>
-              <Link>Forget Password?</Link>
+              <Link>{t('BUTTON.FORGET.PASSWORD')}</Link>
             </RouterLink>
           </ContainerButton>
         </LoginForm>

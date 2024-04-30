@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 
@@ -54,7 +55,7 @@ export const Input: React.FC<Props> = (props: Props) => {
     <InputContainer>
       <InputEstilizado {...props} error={error}/>
       <Icon title={props.title}>{error ? '🔴' : '🟢'}</Icon>
-      {error ? <TextError>{props.name} is invalid</TextError> : <TextError>&nbsp;</TextError>}
+      {error ? <TextError>{`${props.name} ${t("INVALID.FIELD")}`}</TextError> : <TextError>&nbsp;</TextError>}
     </InputContainer>
   );
 };

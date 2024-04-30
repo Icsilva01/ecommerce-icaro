@@ -49,7 +49,7 @@ const Link = styled.a`
 export const TopHeader = () => {
   const { i18n } = useTranslation();
 
-  const handleLanguageChange = (event:any) => {
+  const handleLanguageChange = (event: any) => {
     i18n.changeLanguage(event.target.value);
   };
 
@@ -65,11 +65,11 @@ export const TopHeader = () => {
           </Link>
         </RouterLink>
       </Container>
-      <Select onChange={handleLanguageChange}>
-        <Option value={'ptBr'}>
+      <Select value={i18n.language} onChange={handleLanguageChange}>
+        <Option value={"ptBr"}>
           <Trans i18nKey={"TOP.MENU.SELECT.PORTUGUESE"} />
         </Option>
-        <Option value={'en'}>
+        <Option value={"en"}>
           <Trans i18nKey={"TOP.MENU.SELECT.ENGLISH"} />
         </Option>
       </Select>
