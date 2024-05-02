@@ -45,6 +45,12 @@
     "HOME.SECONDS": "Seconds",
     "HOME.FEATURE": "Featured",
     "HOME.NEW": "New Arrival",
+    "HOME.FAST.DELIVERY": "Free and fast delivery",
+    "HOME.FAST.DELIVERY.TEXT": "Free delivery for all orders over $140",
+    "HOME.SUPPORT": "24/7 Customer service",
+    "HOME.SUPPORT.TEXT": "Friendly 24/7 customer support",
+    "HOME.SECURITY": "Money back guarantee",
+    "HOME.SECURITY.TEXT": "We reurn money within 30 days",
 
     "SIDEBAR.CATEGORIE.WOMAN":"Woman’s Fashion",
     "SIDEBAR.CATEGORIE.MEN": "Men’s Fashion",
