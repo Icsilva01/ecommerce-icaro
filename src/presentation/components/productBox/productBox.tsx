@@ -17,7 +17,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 40px 0px 20px 60px;
+  padding: 40px 0px 0px 60px;
   width: 250px;
   height: 370px;
   transition: transform 0.3s ease-in-out;

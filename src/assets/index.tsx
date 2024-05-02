@@ -14,4 +14,7 @@ export * from './home/cooler';
 export * from './home/keyboard';
 export * from './home/monitor';
 export * from './home/products';
+export * from './home/ps5';
+export * from './home/womemBanner';
+export * from './home/speakersImage';
 export * from './login/Image-login';

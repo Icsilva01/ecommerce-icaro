@@ -43,6 +43,8 @@
     "HOME.HOURS": "Hours",
     "HOME.MINUTES": "Minutes",
     "HOME.SECONDS": "Seconds",
+    "HOME.FEATURE": "Featured",
+    "HOME.NEW": "New Arrival",
 
     "SIDEBAR.CATEGORIE.WOMAN":"Woman’s Fashion",
     "SIDEBAR.CATEGORIE.MEN": "Men’s Fashion",
