@@ -124,6 +124,13 @@ export const Home = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const timer = [
+    { label: t("HOME.DAY"), value: timeLeft.days },
+    { label: t("HOME.HOURS"), value: timeLeft.hours },
+    { label: t("HOME.MINUTES"), value: timeLeft.minutes },
+    { label: t("HOME.SECONDS"), value: timeLeft.seconds },
+  ];
+
   return (
     <Stack style={{ height: "100vh" }}>
       <TopHeader />
@@ -137,22 +144,12 @@ export const Home = () => {
         <ContainerTimer>
           <TitleText>{t("HOME.FLASH.SALE")}</TitleText>
           <Timer>
-            <TimerSegment>
-              <TimerLabel>{t("HOME.DAY")}</TimerLabel>
-              <TimerValue>{timeLeft.days}</TimerValue>
-            </TimerSegment>
-            <TimerSegment>
-              <TimerLabel>{t("HOME.HOURS")}</TimerLabel>
-              <TimerValue>{timeLeft.hours}</TimerValue>
-            </TimerSegment>
-            <TimerSegment>
-              <TimerLabel>{t("HOME.MINUTES")}</TimerLabel>
-              <TimerValue>{timeLeft.minutes}</TimerValue>
-            </TimerSegment>
-            <TimerSegment>
-              <TimerLabel>{t("HOME.SECONDS")}</TimerLabel>
-              <TimerValue>{timeLeft.seconds}</TimerValue>
-            </TimerSegment>
+            {timer.map((time, index) => (
+              <TimerSegment key={index}>
+                <TimerLabel>{time.label}</TimerLabel>
+                <TimerValue>{time.value}</TimerValue>
+              </TimerSegment>
+            ))}
           </Timer>
           <Container style={{ gap: "50px" }}>
             <ButtonBack />
@@ -160,7 +157,7 @@ export const Home = () => {
           </Container>
         </ContainerTimer>
       </HeaderProducts>
-      <Container style={{gap:"15px"}}>
+      <Container style={{ gap: "15px" }}>
         {products.map((product, index) => (
           <ProductBox key={index} text={product.text} value={product.value}>
             <product.Component />
@@ -172,7 +169,13 @@ export const Home = () => {
         <ContainerTimer>
           <TitleText>{t("HOME.NEW")}</TitleText>
         </ContainerTimer>
-        <Container style={{ gap: "30px", paddingBottom: "10px", justifyContent:"center" }}>
+        <Container
+          style={{
+            gap: "30px",
+            paddingBottom: "10px",
+            justifyContent: "center",
+          }}
+        >
           <Ps5Img />
           <Container style={{ gap: "30px", flexDirection: "column" }}>
             <WomemBanner />
@@ -186,19 +189,46 @@ export const Home = () => {
       <Container
         style={{ justifyContent: "center", gap: "88px", padding: "80px 0" }}
       >
-        <Stack style={{alignItems:"center", textAlign:"center", width:"300px", gap:"8px"}}>
+        <Stack
+          style={{
+            alignItems: "center",
+            textAlign: "center",
+            width: "300px",
+            gap: "8px",
+          }}
+        >
           <DeliveryImg />
-          <TitleText style={{fontSize:"20px", paddingTop:"12px"}}>{t("HOME.FAST.DELIVERY")}</TitleText>
+          <TitleText style={{ fontSize: "20px", paddingTop: "12px" }}>
+            {t("HOME.FAST.DELIVERY")}
+          </TitleText>
           <Text>{t("HOME.FAST.DELIVERY.TEXT")}</Text>
         </Stack>
-        <Stack style={{alignItems:"center", textAlign:"center", width:"300px", gap:"8px"}}>
+        <Stack
+          style={{
+            alignItems: "center",
+            textAlign: "center",
+            width: "300px",
+            gap: "8px",
+          }}
+        >
           <HeadsetImg />
-          <TitleText style={{fontSize:"20px", paddingTop:"12px"}}>{t("HOME.SUPPORT")}</TitleText>
+          <TitleText style={{ fontSize: "20px", paddingTop: "12px" }}>
+            {t("HOME.SUPPORT")}
+          </TitleText>
           <Text>{t("HOME.SUPPORT.TEXT")}</Text>
         </Stack>
-        <Stack style={{alignItems:"center", textAlign:"center", width:"300px", gap:"8px"}}>
+        <Stack
+          style={{
+            alignItems: "center",
+            textAlign: "center",
+            width: "300px",
+            gap: "8px",
+          }}
+        >
           <SecurityImg />
-          <TitleText style={{fontSize:"18px", paddingTop:"12px"}}>{t("HOME.SECURITY")}</TitleText>
+          <TitleText style={{ fontSize: "18px", paddingTop: "12px" }}>
+            {t("HOME.SECURITY")}
+          </TitleText>
           <Text>{t("HOME.SECURITY.TEXT")}</Text>
         </Stack>
       </Container>

@@ -8,6 +8,7 @@
     "MENU.HOME": "Home",
     "MENU.ABOUT": "About",
     "MENU.CONTACT": "Contact",
+    "MENU.MANAGE.ACCOUNT": "My Account",
     "MENU.SIGNUP": "Sign Up",
     "MENU.ERROR.404": "404 Error",
     "MENU.ERROR.500": "500 Error",
@@ -68,7 +69,17 @@
     "LOGIN.ACCOUNT": "Login",
     "MANAGE.ACCOUNT": "Manage Account",
 
+    "MANAGE.MY.ACCOUNT": "Manage My Account",
+    "MANAGE.MY.PROFILE": "My Profile",
+    "MANAGE.MY.ADDRESS": "Address Book",
+    "MANAGE.MY.PAYMENTS": "My Payment Options",
+    "MANAGE.MY.ORDER": "My Orders",
+    "MANAGE.MY.RETURN": "My Returns",
+    "MANAGE.MY.CANCEL": "My Cancellations",
+    "MANAGE.MY.WISHLIST": "My Wishlist",
+
     "INVALID.FIELD": "is invalid",
+    "WELCOME": "Welcome!",
 
     "FORGET.PASSWORD.TITLE": "Forget Password?",
     "FORGET.PASSWORD.TEXT": "Enter your email address and we will send you a new password.",

@@ -8,6 +8,7 @@
     "MENU.HOME": "Home",
     "MENU.ABOUT": "Sobre",
     "MENU.CONTACT": "Contato",
+    "MENU.MANAGE.ACCOUNT": "Minha conta",
     "MENU.SIGNUP": "Cadastre-se",
     "MENU.ERROR.404": "Erro 404",
     "MENU.ERROR.500": "Erro 500",
@@ -68,7 +69,19 @@
     "LOGIN.ACCOUNT": "Login",
     "MANAGE.ACCOUNT": "Gerenciar conta",
 
+    "MANAGE.MY.ACCOUNT": "Minha conta",
+    "MANAGE.MY.PROFILE": "Meu perfil",
+    "MANAGE.MY.ADDRESS": "Meus endereços",
+    "MANAGE.MY.PAYMENTS": "Meus pagamentos",
+    "MANAGE.MY.ORDER": "Meus pedidos",
+    "MANAGE.MY.RETURN": "Minhas devoluções",
+    "MANAGE.MY.CANCEL": "Meus cancelamentos",
+    "MANAGE.MY.WISHLIST": "Minha lista de desejos",
+
+    "MANAGE.ACCOUNT.TITLE": "Gerenciar conta",
+
     "INVALID.FIELD": "inválido",
+    "WELCOME": "Bem-vindo! ",
 
     "FORGET.PASSWORD.TITLE": "Esqueceu a senha?",
     "FORGET.PASSWORD.TEXT": "Digite seu e-mail e enviaremos um link para redefinir sua senha.",

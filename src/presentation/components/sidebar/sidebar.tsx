@@ -1,13 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { t } from "i18next";
 import styled from "styled-components";
-
-const SidebarContainer = styled.div`
-  width: 20%;
-  padding: 20px 60px;
-  border-right: 1px solid #ccc;
-  height: 100%;
-`;
+import { SidebarContainer } from "../styled";
 
 const Accordion = styled.div`
   cursor: pointer;
@@ -49,7 +43,7 @@ export const Sidebar = () => {
     }
   ]
   return (
-    <SidebarContainer>
+    <SidebarContainer style={{borderRight:"1px solid #ccc"}}>
       {components.map((sidebar, index) => (
           <Accordion key={index} onClick={() => navigate(sidebar.link)}>
             {sidebar.name}

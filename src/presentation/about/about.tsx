@@ -3,6 +3,7 @@ import { Footer, Header, TopHeader } from "../components";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { ImageAbout, ImageMarket, ImageMoney, ImageShopping, ImageMoneyBag } from "../../assets";
+import { BoxNav } from "../components/styled";
 
 const Box = styled.div`
   display: flex;
@@ -66,7 +67,7 @@ export const About = () => {
     <div>
       <TopHeader />
       <Header />
-      <Box>
+      <BoxNav>
         <TextNavigation onClick={() => navigate("/")}>
           {t("MENU.HOME")}
         </TextNavigation>
@@ -74,7 +75,7 @@ export const About = () => {
         <TextNavigation style={{ color: "#000000", cursor: "auto" }}>
           {t("MENU.ABOUT")}
         </TextNavigation>
-      </Box>
+      </BoxNav>
       <Box style={{justifyContent:"space-between"}}>
         <Stack>
           <TextTitle>
